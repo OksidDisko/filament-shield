@@ -21,7 +21,7 @@ trait HasPanelShield
         }
     }
 
-    public function canAccessPanel(Panel $panel): bool
+    public function canAccessFilament(Panel $panel): bool
     {
         return $this->hasRole(Utils::getSuperAdminName()) || $this->hasRole(Utils::getPanelUserRoleName());
     }
